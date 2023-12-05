@@ -154,7 +154,28 @@ $(() => {
     const $td10 = $("<td>").text("Quidditch Practice");
     $tr5.append($td10);
 
-    console.log($table)
+    //console.log($table)
+
+    //Year 5
+
+    //Break your wand
+    $h4b.remove();
+
+    //remove your butter beer
+    $butterBeerLi.remove()
+
+    //add a new wand. Be sure to add to the same spot after your pet
+    $h4b.text("The remade wand of the psycho puppie").css("color", "purple");
+    //style your wand
+    $h4b.insertAfter($h4a);
+
+    //send pet on a spy mission
+    $h4a.remove();
+    $td10.append($h4a);
+
+    //have your pet come back
+    $h4a.remove();
+    $h4a.insertAfter($h3)
 });
 
 //Query for your div with the id of container and set it to a variable named $container
