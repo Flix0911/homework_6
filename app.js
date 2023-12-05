@@ -175,7 +175,22 @@ $(() => {
 
     //have your pet come back
     $h4a.remove();
-    $h4a.insertAfter($h3)
+    $h4a.insertAfter($h3);
+
+    //Year 6
+
+    //Hide all belongs, give an argument of slow - to see this function in action
+    //argument of 2000
+    //show
+    $(".secret").hide().delay(2000).show(0);
+
+    //change leash to half cabbage
+    $leashLi.text("half cabbage");
+    $leashLi.addClass("cabbage");
+
+    //remove the cabbage class
+    $leashLi.removeClass("cabbage");
+
 });
 
 //Query for your div with the id of container and set it to a variable named $container
