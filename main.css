@@ -13,4 +13,16 @@ body {
 
 ul {
     list-style-type: none;
+    padding-inline-start: 0;
+}
+
+table,
+th,
+td {
+    border: gray 1px solid;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
 }

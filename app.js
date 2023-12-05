@@ -44,43 +44,117 @@ $(() => {
     const $storageTrunkUl = $("<ul>");
     //console.log($storageTrunkUl)
     $storageTrunkUl.attr("storage", "trunk");
-    $container.append($storageTrunkUl)
+    $container.append($storageTrunkUl);
 
     //list of items
 
     //butter beer
-    const $butterBeerLi = $("<li>").text("Butter Beer")
+    const $butterBeerLi = $("<li>").text("Butter Beer");
     //console.log($butterBeerLi)
-    $storageTrunkUl.append($butterBeerLi)
+    $storageTrunkUl.append($butterBeerLi);
 
     //invisibility cloak (add a class of secret)
-    const $invisibilityCloakLi = $("<li>").text("Invisibility Cloak")
+    const $invisibilityCloakLi = $("<li>").text("Invisibility Cloak");
     //console.log($invisibilityCloakLi)
-    $invisibilityCloakLi.attr("class", "secret")
-    $storageTrunkUl.append($invisibilityCloakLi)
+    $invisibilityCloakLi.attr("class", "secret");
+    $storageTrunkUl.append($invisibilityCloakLi);
 
     //magic map (add a class of secret)
-    const $magicMapLi = $("<li>").text("Magic Map")
+    const $magicMapLi = $("<li>").text("Magic Map");
     //console.log($magicMapLi)
-    $magicMapLi.attr("class", "secret")
-    $storageTrunkUl.append($magicMapLi)
+    $magicMapLi.attr("class", "secret");
+    $storageTrunkUl.append($magicMapLi);
 
     //time turner (add a class of secret)
-    const $timeTurnerLi = $("<li>").text("Time Turner")
+    const $timeTurnerLi = $("<li>").text("Time Turner");
     //console.log($timeTurnerLi)
-    $timeTurnerLi.attr("class", "secret")
-    $storageTrunkUl.append($timeTurnerLi)
+    $timeTurnerLi.attr("class", "secret");
+    $storageTrunkUl.append($timeTurnerLi);
 
     //Leash (ensure you give the element the same class as your pet)
-    const $leashLi = $("<li>").text("Leash")
+    const $leashLi = $("<li>").text("Leash");
     //console.log($leashLi)
-    $leashLi.attr("id", "#puppie")
-    $storageTrunkUl.append($leashLi)
+    $leashLi.attr("id", "#puppie");
+    $storageTrunkUl.append($leashLi);
 
     //Bertie Bott' Every Flavor [Jelly] Beans
-    const $beansLi = $("<li>").text("Bertie Bott's Every Flavor [Jelly] Beans.")
+    const $beansLi = $("<li>").text("Bertie Bott's Every Flavor [Jelly] Beans.");
     //console.log($beansLi)
-    $storageTrunkUl.append($beansLi)
+    $storageTrunkUl.append($beansLi);
+
+    //right above your table, add an h5 element that says 'Spring 2017'
+    const $h5 = $("<h5>");
+    //console.log($h5)
+    $h5.text("Spring 2017");
+    $container.append($h5);
+
+    //Make a table
+    const $table = $("<table>");
+    //console.log($table);
+    $container.append($table);
+
+    const $thread = $("<thread>");
+    //console.log($thread);
+    $table.append($thread);
+
+    //inside the thread element add two th elements
+        //in the first th add the text day
+    const $th1 = $("<th>").text("Day");
+    //console.log($th1);
+    $thread.append($th1);
+
+        //in the second th add the text Classes
+    const $th2 = $("<th>").text("Classes");
+    //console.log($th2);
+    $thread.append($th2);
+
+    //create a tr element and add two td elements inside
+    const $tr1 = $("<tr>");
+    $table.append($tr1);
+    //console.log($tr1);
+    //1st td add the day Monday
+    const $td1 = $("<td>").text("Monday");
+    //console.log($td1)
+    const $td2 = $("<td>").text("Herbology");
+    //console.log($td2)
+    $tr1.append($td1)
+    $tr1.append($td2)
+
+    //Create more tr elements with tds inside so that you have Mon-Fri and classes each of those days
+
+    //for tuesday
+    const $tr2 = $("<tr>");
+    $table.append($tr2)
+    const $td3 = $("<td>").text("Tuesday");
+    $tr2.append($td3)
+    const $td4 = $("<td>").text("Divination");
+    $tr2.append($td4);
+
+    //for wednesday
+    const $tr3 = $("<tr>");
+    $table.append($tr3);
+    const $td5 = $("<td>").text("Wednesday");
+    $tr3.append($td5);
+    const $td6 = $("<td>").text("History of Magic");
+    $tr3.append($td6)
+
+    //for Thursday
+    const $tr4 = $("<tr>");
+    $table.append($tr4);
+    const $td7 = $("<td>").text("Thursday");
+    $tr4.append($td7);
+    const $td8 = $("<td>").text("Charms");
+    $tr4.append($td8);
+
+    //for Friday
+    const $tr5 = $("<tr>");
+    $table.append($tr5);
+    const $td9 = $("<td>").text("Friday");
+    $tr5.append($td9);
+    const $td10 = $("<td>").text("Quidditch Practice");
+    $tr5.append($td10);
+
+    console.log($table)
 });
 
 //Query for your div with the id of container and set it to a variable named $container
